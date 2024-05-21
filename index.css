@@ -1,0 +1,106 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Fontes/Poppins/Poppins-Bold.ttf') format('truetype'); 
+    /*  @font-face faz o upload da fonte. */
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #E8D8AF;
+    color: #9C724D;
+    font-family: 'Poppins', sans-serif; /* Fonte preferencial Poppins, com fallback para sans-serif */
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem; 
+}
+nav {
+    display: flex;
+    background-color: #E8D8AF;
+    align-items: center;
+    
+}
+
+.logo {
+    width: 110px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 600px; /* Adiciona margem à esquerda para empurrar a barra de navegação para a direita */
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+button {
+    background-color: #E6D6AD;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 70%;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  button:hover {
+    background-color: #D1C08E;
+  }
+/* Estilos do conteúdo principal */
+main {
+   
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    background-image: url('Imagens/fundo.png');
+    background-size: cover;
+  }
+  
+  .img-index {
+    text-align: left; /*  qualquer texto dentro desse elemento será alinhado à margem esquerda.*/
+    margin-right: 300px; 
+    margin-left: 0; 
+/* define a margem direita do elemento .img-index como 300 pixels. Isso cria um espaço vazio de 300 pixels à direita do elemento.*/
+flex-shrink: 0; /*define como o elemento .img-index deve se comportar em relação à redução de tamanho. Impede que o elemento encolha quando o espaço disponível for limitado. */
+  }
+  
+  h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    color: #E6D6AD;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif; /* Fonte preferencial Poppins, com fallback para sans-serif */
+  }
+  
+p {
+    line-height: 1.5;
+    color: #E6D6AD;
+}
